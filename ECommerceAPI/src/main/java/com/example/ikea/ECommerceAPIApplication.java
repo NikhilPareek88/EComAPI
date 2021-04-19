@@ -36,7 +36,7 @@ public class ECommerceAPIApplication {
 			productRepository.setProducts(products);
 			inventoryRepository.setInventory(inventory);
 		} catch (Exception e) {
-			System.out.println(e);
+			throw e;
 		}
 	}
 
